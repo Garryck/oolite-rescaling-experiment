@@ -116,7 +116,7 @@ this.systemWillPopulate = function()
 						{
 							priority: 5,
 							location: "COORDINATES",
-							coordinates: system.mainStation.position.add(system.mainStation.vectorForward.multiply(10E3)),
+							coordinates: system.mainStation.position.add(system.mainStation.vectorForward.multiply(5E3)),
 							callback: function(pos) {
 								var nb = system.addShips("buoy",1,pos,0)[0];
 								nb.scanClass = "CLASS_BUOY";
@@ -141,7 +141,7 @@ this.systemWillPopulate = function()
 						});
 
 	/* Add asteroids */
-	var clusters = 2*(1+Math.floor(system.scrambledPseudoRandomNumber(51728)*4));
+	var clusters = 4*(1+Math.floor(system.scrambledPseudoRandomNumber(51728)*4));
 	var psclusters = 1+(clusters/2);
 	clusters = clusters-psclusters;
 	
