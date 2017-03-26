@@ -4709,7 +4709,7 @@ ShipEntity* doOctreesCollide(ShipEntity* prime, ShipEntity* other)
 				jink = kZeroVector; // almost all behaviours
 
 				// TODO: good pilots use behaviour_attack_sniper sometimes
-				if (getWeaponRangeFromType(forward_weapon_real_type) > 12500 && range > 12500)
+				if (getWeaponRangeFromType(forward_weapon_real_type) > 3750 && range > 3750)
 				{
 					behaviour = BEHAVIOUR_ATTACK_SNIPER;
 				}
@@ -5048,7 +5048,7 @@ ShipEntity* doOctreesCollide(ShipEntity* prime, ShipEntity* other)
 	double  range = [self rangeToPrimaryTarget];
 	float	max_available_speed = maxFlightSpeed;
 
-	if (range < 15000)
+	if (range < 3750)
 	{
 		behaviour = BEHAVIOUR_ATTACK_TARGET;
 	}
@@ -5281,11 +5281,11 @@ ShipEntity* doOctreesCollide(ShipEntity* prime, ShipEntity* other)
 
 	[self trackPrimaryTarget:delta_t:NO];
 
-	/* Don't open fire until within 3km - it doesn't take many mining
+	/* Don't open fire until within 0.5km - it doesn't take many mining
 	 * laser shots to destroy an asteroid, but some of these mining
 	 * ships are way too slow to effectively chase down the debris:
 	 * wait until reasonably close before trying to split it. */
-	if (range < 3000)
+	if (range < 500)
 	{
 		[self fireMainWeapon:range];
 	}
@@ -13912,7 +13912,7 @@ Vector positionOffsetForShipInRotationToAlignment(ShipEntity* ship, Quaternion q
 			my_entities[station_count++] = [uni_entities[i] retain];		//	retained
 	//
 	StationEntity *thing = nil, *station = nil;
-	double range2, nearest2 = SCANNER_MAX_RANGE2 * 1000000.0; // 1000x typical scanner range (25600 km), squared.
+	double range2, nearest2 = SCANNER_MAX_RANGE2 * 10000000.0; // 1000x typical scanner range (25600 km), squared.
 	for (i = 0; i < station_count; i++)
 	{
 		thing = (StationEntity *)my_entities[i];
