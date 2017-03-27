@@ -696,6 +696,31 @@
 		name = "Huge Asteroid";
 		roles = "asteroid(0.05)";
 	};
+	
+	"asteroid-small" = 
+	{
+		like_ship = "oolite_template_asteroid_small";
+	};
+	"asteroid-alternative-small" =
+	{
+		like_ship = "oolite_template_asteroid_small_alt";
+	};
+	"asteroid-large" = 
+	{
+		like_ship = "oolite_template_asteroid_large";
+	};
+	"asteroid-alternative-large" =
+	{
+		like_ship = "oolite_template_asteroid_large_alt";
+	};
+	"asteroid-huge" = 
+	{
+		like_ship = "oolite_template_asteroid_huge";
+	};
+	"asteroid-alternative-huge" =
+	{
+		like_ship = "oolite_template_asteroid_huge_alt";
+	};
 	"oolite_template_tutorial-asteroid" =
 	{
 		like_ship = "oolite_template_asteroid";
@@ -1377,7 +1402,7 @@
 		like_ship = "oolite_template_cobra3";
 		is_template = 1;
 		max_flight_speed = 150;
-		thrust = 30;
+		thrust = 15;
 		roles = "trader(0.375) trader-courier(0.2) trader-smuggler(0.75) hunter-medium(0.5) pirate-heavy-fighter pirate-interceptor(0.25) pirate-aegis-raider(0.2) scavenger sunskim-trader";
 	};
 	"oolite_template_cobra3-alternate" =
@@ -1596,7 +1621,7 @@
 			};
 		};
 		roles = "pirate(0.25) pirate-light-freighter(0.5) escort-heavy(0.5) escort-medium(0.25)";
-		thrust = 30;
+		thrust = 15;
 	};
 	"oolite_template_cobramk1-miner" = 
 	{
@@ -4185,30 +4210,6 @@
 	"asteroid-alternative" =
 	{
 		like_ship = "oolite_template_asteroid_alt";
-	};
-	"asteroid-small" = 
-	{
-		like_ship = "oolite_template_asteroid_small";
-	};
-	"asteroid-alternative-small" =
-	{
-		like_ship = "oolite_template_asteroid_small_alt";
-	};
-	"asteroid-large" = 
-	{
-		like_ship = "oolite_template_asteroid_large";
-	};
-	"asteroid-alternative-large" =
-	{
-		like_ship = "oolite_template_asteroid_large_alt";
-	};
-	"asteroid-huge" = 
-	{
-		like_ship = "oolite_template_asteroid_huge";
-	};
-	"asteroid-alternative-huge" =
-	{
-		like_ship = "oolite_template_asteroid_huge_alt";
 	};
 	"oolite-cinder" =
 	{
