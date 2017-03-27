@@ -48,8 +48,8 @@ extern size_t gTotalEntityMemory;
 // ie. the furthest away thing we can draw is at 1280km (a 2.5km wide object would disappear at that range)
 
 
-#define SCANNER_MAX_RANGE			12800.0
-#define SCANNER_MAX_RANGE2			163840000.0
+#define SCANNER_MAX_RANGE			8533.0
+#define SCANNER_MAX_RANGE2			72812089.0
 
 #define CLOSE_COLLISION_CHECK_MAX_RANGE2 1000000000.0
 
