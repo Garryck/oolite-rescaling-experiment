@@ -46,19 +46,19 @@ NSString *OOShipLibrarySpeed (ShipEntity *demo_ship)
 	{
 		result = DESC(@"oolite-ship-library-speed-stationary");
 	}
-	else if (param <= 150)
+	else if (param <= 75)
 	{
 		result = DESC(@"oolite-ship-library-speed-veryslow");
 	}
-	else if (param <= 250)
+	else if (param <= 125)
 	{
 		result = DESC(@"oolite-ship-library-speed-slow");
 	}
-	else if (param <= 325)
+	else if (param <= 162.5)
 	{
 		result = DESC(@"oolite-ship-library-speed-average");
 	}
-	else if (param <= 425)
+	else if (param <= 212.5)
 	{
 		result = DESC(@"oolite-ship-library-speed-fast");
 	}
