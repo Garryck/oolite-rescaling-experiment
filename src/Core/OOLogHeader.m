@@ -162,7 +162,7 @@ void OOPrintLogHeader(void)
 	
 	NSString *versionString = nil;
 	#if (defined (SNAPSHOT_BUILD) && defined (OOLITE_SNAPSHOT_VERSION))
-		versionString = @"development version " OOLITE_SNAPSHOT_VERSION;
+		versionString = @"Rescaling Experiment version " OOLITE_SNAPSHOT_VERSION;
 	#else
 		versionString = [NSString stringWithFormat:@"version %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
 	#endif
