@@ -1460,7 +1460,7 @@ static GLfloat	docked_light_specular[4]	= { DOCKED_ILLUM_LEVEL, DOCKED_ILLUM_LEV
 		}
 		else if ([code isEqualToString:@"LANE_WP"])
 		{
-			result = OORandomPositionInCylinder(kZeroHPVector,SCANNER_MAX_RANGE,[planet position],[planet radius]*1.1,LANE_WIDTH);
+			result = OORandomPositionInCylinder(kZeroHPVector,SCANNER_MAX_RANGE,[planet position],[planet radius]*3,LANE_WIDTH);
 		}
 		else if ([code isEqualToString:@"LANE_WS"])
 		{
@@ -1468,7 +1468,7 @@ static GLfloat	docked_light_specular[4]	= { DOCKED_ILLUM_LEVEL, DOCKED_ILLUM_LEV
 		}
 		else if ([code isEqualToString:@"LANE_PS"])
 		{
-			result = OORandomPositionInCylinder([planet position],[planet radius]*1.1,[sun position],[sun radius]*3,LANE_WIDTH);
+			result = OORandomPositionInCylinder([planet position],[planet radius]*3,[sun position],[sun radius]*3,LANE_WIDTH);
 		}
 		else if ([code isEqualToString:@"STATION_AEGIS"])
 		{
