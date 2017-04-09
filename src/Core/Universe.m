@@ -113,7 +113,7 @@ enum
 #define MAX_NUMBER_OF_ENTITIES				200
 #define STANDARD_STATION_ROLL				0.4
 // currently twice scanner radius
-#define LANE_WIDTH			(4.0 * SCANNER_MAX_RANGE)
+#define LANE_WIDTH			(2.83 * SCANNER_MAX_RANGE)
 
 static NSString * const kOOLogUniversePopulateError			= @"universe.populate.error";
 static NSString * const kOOLogUniversePopulateWitchspace	= @"universe.populate.witchspace";
